@@ -8,6 +8,7 @@ formEl.addEventListener('submit', event => {
 
     if( inputEmailEl.value === '' || inputPasswordEl.value === ''){
         alert('Все поля должны быть заполнены!');
+        return;
     } 
     
     const email = event.currentTarget.elements.email.value;
